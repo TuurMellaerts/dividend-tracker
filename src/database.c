@@ -22,11 +22,18 @@ bool database_createDatabase()
     return true;
 }
 
-/**
- * @brief Function to enter a dividend transaction into the database file.
- * @return true if entry succeeded, false otherwise
-*/
 bool database_dividendEntry()
 {
+    FILE *fptr;
+
+    // Open database file
+    fptr = fopen("build/dividend-database.db", "w");
+
+    // Write to the database file
+    fprintf(fptr, "This is a first try to write to the database");
+
+    // Close the file
+    fclose(fptr);
+
     return false;
 }

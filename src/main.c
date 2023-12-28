@@ -15,9 +15,15 @@
 */
 int main(int argc, char *argv[])
 {
-    printf("Creation of database!\n");
+    printf("\nSTARTING APPLICATION\n");
 
     database_createDatabase();
+    printf("Creation of database succeeded!\n");
+
+    database_dividendEntry();
+    printf("Writing to the database succeeded!\n");
+
+    printf("\nCLOSING APPLICATION\n");
 
     return 0;
 }

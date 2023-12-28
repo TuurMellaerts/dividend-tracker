@@ -12,3 +12,9 @@
  * @return true if creation succeeded, false otherwise
 */
 bool database_createDatabase();
+
+/**
+ * @brief Function to enter a dividend transaction into the database file.
+ * @return true if entry succeeded, false otherwise
+*/
+bool database_dividendEntry();
