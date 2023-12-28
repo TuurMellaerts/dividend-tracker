@@ -4,9 +4,6 @@
 */
 #pragma once
 
-// General includes
-#include <cstdint>
-
 typedef struct dividendEntry
 {
     float dividendAmount;
@@ -14,7 +11,7 @@ typedef struct dividendEntry
     char *dividendISIN;
     char *dividendStockName;
     char *dividendCurrency;
-    uint16_t day;
-    uint16_t month;
-    uint16_t year;
+    unsigned int day;
+    unsigned int month;
+    unsigned int year;
 } dividendEntry;
