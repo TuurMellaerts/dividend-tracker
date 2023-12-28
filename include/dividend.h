@@ -15,3 +15,9 @@ typedef struct dividendEntry
     unsigned int month;
     unsigned int year;
 } dividendEntry;
+
+/**
+ * @brief Function to make a dividend transaction entry.
+ * @param enter The address of a dividendEntry struct.
+*/
+void dividend_makeEntry(dividendEntry *enter);

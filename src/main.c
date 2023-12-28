@@ -22,6 +22,7 @@ int main(int argc, char *argv[])
 
     // Create database test entry
     dividendEntry enter;
+    dividend_makeEntry(&enter);
 
     // Create database
     database_createDatabase();
