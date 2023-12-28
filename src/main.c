@@ -21,15 +21,23 @@ int main(int argc, char *argv[])
     printf("====================\n\n");
 
     // Create database test entry
-    dividendEntry enter;
-    dividend_makeEntry(&enter);
+    dividendEntry enter = {
+        .dividendAmount = 1.50,
+        .dividendTickerSymbol = "TSLA",
+        .dividendISIN = "IE54QDS54EF1",
+        .dividendStockName = "Tesla Inc.",
+        .dividendCurrency = "EUR",
+        .day = 15,
+        .month = 12,
+        .year = 2023
+    };
 
     // Create database
     database_createDatabase();
     printf("Creation of database succeeded!\n");
 
     // Make database entry
-    database_dividendEntry();
+    database_dividendEntry(enter);
     printf("Writing to the database succeeded!\n");
 
     printf("\n===================\n");
