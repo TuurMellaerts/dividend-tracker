@@ -1,3 +1,8 @@
+/**
+ * @file
+ * @brief Main file for the application "dividend-tracker"
+*/
+
 // General includes
 #include <stdio.h>
 
