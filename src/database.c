@@ -5,12 +5,10 @@
 
 // General includes
 #include <stdio.h>
-#include <stdbool.h>
 
-/**
- * @brief Function to create the database file.
- * @return true if creation succeeded, false otherwise
-*/
+// Specific includes
+#include "../include/database.h"
+
 bool database_createDatabase()
 {
     FILE *fptr;
