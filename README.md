@@ -10,4 +10,4 @@ When you clone the repository to your local machine, you can run the application
 Also feel free to use this application and code however you want!
 
 ## Working progress
-Please keep in mind that this is still an application that is under heavy development. If you do find any bugs or have any remarks, you can always contact me via mail "tuur.mellaerts1@hotmail.be".
+Please keep in mind that this is still an application that is under heavy development. If you do find any bugs or have any remarks, you can always contact me via email "tuur.mellaerts1@hotmail.be".
