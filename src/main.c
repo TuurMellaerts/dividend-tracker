@@ -15,7 +15,9 @@
 */
 int main(int argc, char *argv[])
 {
-    printf("\nSTARTING APPLICATION\n");
+    printf("\n====================\n");
+    printf("STARTING APPLICATION\n");
+    printf("====================\n");
 
     database_createDatabase();
     printf("Creation of database succeeded!\n");
@@ -23,7 +25,9 @@ int main(int argc, char *argv[])
     database_dividendEntry();
     printf("Writing to the database succeeded!\n");
 
-    printf("\nCLOSING APPLICATION\n");
+    printf("===================\n");
+    printf("CLOSING APPLICATION\n");
+    printf("===================\n\n");
 
     return 0;
 }
