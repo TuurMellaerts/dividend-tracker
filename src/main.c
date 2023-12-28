@@ -20,25 +20,20 @@ int main(int argc, char *argv[])
     printf("STARTING APPLICATION\n");
     printf("====================\n\n");
 
-    // Create database test entry
-    dividendEntry enter = {
-        .dividendAmount = 1.50,
-        .dividendTickerSymbol = "TSLA",
-        .dividendISIN = "IE54QDS54EF1",
-        .dividendStockName = "Tesla Inc.",
-        .dividendCurrency = "EUR",
-        .day = 15,
-        .month = 12,
-        .year = 2023
-    };
-
     // Create database
     database_createDatabase();
     printf("Creation of database succeeded!\n");
 
-    // Make database entry
-    database_dividendEntry(enter);
-    printf("Writing to the database succeeded!\n");
+    int userInput = 0;
+    printf("Enter -1 to exit application. Enter 1 to make dividend entry: ");
+    scanf("%d", &userInput);
+    if(userInput == -1)
+    {
+        printf("\n===================\n");
+        printf("CLOSING APPLICATION\n");
+        printf("===================\n\n");
+        return 0;
+    }
 
     printf("\n===================\n");
     printf("CLOSING APPLICATION\n");
