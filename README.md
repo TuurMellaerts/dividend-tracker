@@ -1,4 +1,4 @@
-# dividend-tracker
+# dividend-tracker (in progress)
 A (currently terminal-based) dividend tracker application.
 
 ## Description
