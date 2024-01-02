@@ -1,6 +1,7 @@
 /**
  * @file
  * @brief Dividend interface header.
+ * @author Tuur Mellaerts
 */
 #pragma once
 

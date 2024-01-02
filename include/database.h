@@ -1,6 +1,7 @@
 /**
  * @file
  * @brief Database interface header.
+ * @author Tuur Mellaerts
 */
 #pragma once
 

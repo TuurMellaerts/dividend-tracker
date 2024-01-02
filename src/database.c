@@ -1,6 +1,7 @@
 /**
  * @file
  * @brief Database interface.
+ * @author Tuur Mellaerts
 */
 
 // General includes

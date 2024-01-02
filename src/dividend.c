@@ -1,6 +1,7 @@
 /**
  * @file
  * @brief Dividend transaction interface.
+ * @author Tuur Mellaerts
 */
 
 // Specific includes

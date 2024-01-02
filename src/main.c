@@ -1,6 +1,7 @@
 /**
  * @file
  * @brief Main file for the application "dividend-tracker"
+ * @author Tuur Mellaerts
 */
 
 // General includes
