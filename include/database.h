@@ -12,9 +12,6 @@
 // Specific includes
 #include "dividend.h"
 
-// Variables
-FILE *fptr = NULL;
-
 /**
  * @brief Function to create the database file.
  * @return true if creation succeeded, false otherwise
