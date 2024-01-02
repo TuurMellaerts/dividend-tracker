@@ -7,9 +7,13 @@
 
 // General includes
 #include <stdbool.h>
+#include <stdio.h>
 
 // Specific includes
 #include "dividend.h"
+
+// Variables
+FILE *fptr = NULL;
 
 /**
  * @brief Function to create the database file.

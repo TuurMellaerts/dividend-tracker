@@ -4,17 +4,12 @@
  * @author Tuur Mellaerts
 */
 
-// General includes
-#include <stdio.h>
-
 // Specific includes
 #include "../include/database.h"
 #include "../include/dividend.h"
 
 bool database_createDatabase()
 {
-    FILE *fptr;
-
     // Create a file
     fptr = fopen("build/dividend-database.db", "w");
 
@@ -26,8 +21,6 @@ bool database_createDatabase()
 
 bool database_dividendEntry(dividendEntry enter)
 {
-    FILE *fptr;
-
     // Open database file
     fptr = fopen("build/dividend-database.db", "w");
 
