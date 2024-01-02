@@ -10,4 +10,3 @@ clean:
 	rm build/dividend-tracker.exe
 	rm build/dividend-database.db
 	rmdir build
-
