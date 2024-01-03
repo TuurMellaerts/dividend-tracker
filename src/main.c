@@ -12,6 +12,7 @@
 // Specific includes
 #include "../include/CLI.h"
 #include "../include/database.h"
+#include "../include/dividend.h"
 
 /**
  * @brief Main function of application. 
@@ -27,6 +28,15 @@ int main(int argc, char *argv[])
     {
         CLI_PrintDatabaseCreatedMessage();
     }
+
+    // Write header to database
+    database_WriteDatabaseHeader();
+
+    // Define a dividend entry
+    dividendEntry_t entry = dividend_MakeEntry();
+
+    // Enter in database
+    database_DividendEntry(entry);
 
     // Print closing application message
     CLI_PrintCloseApplicationMessage();

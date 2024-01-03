@@ -21,6 +21,11 @@
 bool database_CreateDatabase();
 
 /**
+ * @brief Function to write a header to the database.
+*/
+void database_WriteDatabaseHeader(void);
+
+/**
  * @brief Function to enter a dividend transaction into the database file.
  * @return true if entry succeeded, false otherwise
 */

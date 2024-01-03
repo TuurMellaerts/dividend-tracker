@@ -10,10 +10,10 @@
 typedef struct dividendEntry_s
 {
     float dividendAmount;
-    char *dividendTickerSymbol;
-    char *dividendISIN;
-    char *dividendStockName;
-    char *dividendCurrency;
+    char* dividendTickerSymbol;
+    char* dividendISIN;
+    char* dividendStockName;
+    char* dividendCurrency;
     unsigned int day;
     unsigned int month;
     unsigned int year;
@@ -21,6 +21,6 @@ typedef struct dividendEntry_s
 
 /**
  * @brief Function to make a dividend transaction entry.
- * @param enter The address of a dividendEntry struct.
+ * @return a dividendEntry struct
 */
-void dividend_MakeEntry(dividendEntry_t* enter);
+dividendEntry_t dividend_MakeEntry(void);

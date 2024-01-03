@@ -23,16 +23,28 @@ bool database_CreateDatabase()
     return true;
 }
 
+void database_WriteDatabaseHeader(void)
+{
+    FILE *fptr;
+
+    // Open database file
+    fptr = fopen("build/dividend-database.db", "a");
+
+    // Write header to the database file
+    fprintf(fptr, "TS, ISIN, SN, CUR, AM, D, M, Y\n");
+
+    // Close the file
+    fclose(fptr);
+}
+
 bool database_DividendEntry(dividendEntry_t enter)
 {
     FILE *fptr;
 
     // Open database file
-    fptr = fopen("build/dividend-database.db", "w");
+    fptr = fopen("build/dividend-database.db", "a");
 
-    // Write to the database file (still in test mode)
-    fprintf(fptr, "This is a first try to write to the database\n");
-    fprintf(fptr, "TS, ISIN, SN, CUR, AM, D, M, Y\n");
+    // Write to the database file
     fprintf(fptr, "%s, %s, %s, %s, %f, %d, %d, %d\n", enter.dividendTickerSymbol, enter.dividendISIN, enter.dividendStockName, enter.dividendCurrency, enter.dividendAmount, enter.day, enter.month, enter.year);
 
     // Close the file
