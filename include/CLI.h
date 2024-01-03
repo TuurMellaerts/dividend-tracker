@@ -21,3 +21,9 @@ bool CLI_PrintStartApplicationMessage(void);
  * @return true is succeeded, false otherwise
 */
 bool CLI_PrintCloseApplicationMessage(void);
+
+/**
+ * @brief Print that the database was created succesfully.
+ * @return true is succeeded, false otherwise
+*/
+bool CLI_PrintDatabaseCreatedMessage(void);

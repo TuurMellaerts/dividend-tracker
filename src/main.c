@@ -12,7 +12,6 @@
 // Specific includes
 #include "../include/CLI.h"
 #include "../include/database.h"
-#include "../include/dividend.h"
 
 /**
  * @brief Main function of application. 
@@ -24,8 +23,10 @@ int main(int argc, char *argv[])
     CLI_PrintStartApplicationMessage();
 
     // Create database
-    database_CreateDatabase();
-    printf("Creation of database succeeded!\n");
+    if(database_CreateDatabase())
+    {
+        CLI_PrintDatabaseCreatedMessage();
+    }
 
     // Print closing application message
     CLI_PrintCloseApplicationMessage();
