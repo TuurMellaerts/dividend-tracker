@@ -1,11 +1,13 @@
 /**
- * @file
- * @brief Dividend interface header.
+ * @file dividend.h
+ * @brief The dividend interface header.
  * @author Tuur Mellaerts
+ * @version v0.1
+ * @date 03/01/2023
 */
 #pragma once
 
-typedef struct dividendEntry
+typedef struct dividendEntry_s
 {
     float dividendAmount;
     char *dividendTickerSymbol;
@@ -15,10 +17,10 @@ typedef struct dividendEntry
     unsigned int day;
     unsigned int month;
     unsigned int year;
-} dividendEntry;
+} dividendEntry_t;
 
 /**
  * @brief Function to make a dividend transaction entry.
  * @param enter The address of a dividendEntry struct.
 */
-void dividend_makeEntry(dividendEntry *enter);
+void dividend_MakeEntry(dividendEntry_t* enter);

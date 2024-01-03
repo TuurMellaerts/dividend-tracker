@@ -1,5 +1,5 @@
 /**
- * @file CLI.H
+ * @file CLI.h
  * @brief Interface used to print statements to the end-user.
  * @author Tuur Mellaerts
  * @version v0.1

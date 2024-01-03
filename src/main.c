@@ -1,7 +1,9 @@
 /**
- * @file
+ * @file main.c
  * @brief Main file for the application "dividend-tracker"
  * @author Tuur Mellaerts
+ * @version v0.1
+ * @date 03/01/2023
 */
 
 // General includes
@@ -18,11 +20,11 @@
 */
 int main(int argc, char *argv[])
 {
-    // Print starting applciation message
+    // Print starting application message
     CLI_PrintStartApplicationMessage();
 
     // Create database
-    database_createDatabase();
+    database_CreateDatabase();
     printf("Creation of database succeeded!\n");
 
     // Print closing application message
