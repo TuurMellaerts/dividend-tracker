@@ -1,6 +1,6 @@
 build: src/*.c
 	mkdir build
-	gcc -o build/dividend-tracker.exe src/*.c
+	gcc -o build/dividend-tracker.exe -Werror src/*.c
 	./build/dividend-tracker.exe
 	
 run:
