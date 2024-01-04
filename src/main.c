@@ -23,11 +23,11 @@ int main(int argc, char *argv[])
     // Print starting application message
     CLI_PrintStartApplicationMessage();
 
-    // Create database
-    if(database_CreateDatabase())
-    {
-        CLI_PrintDatabaseCreatedMessage();
-    }
+    // Initialise database
+    database_Init();
+
+    // Print message that database is opened succesfully
+    CLI_PrintDatabaseCreatedMessage();
 
     // Write header to database
     database_WriteDatabaseHeader();

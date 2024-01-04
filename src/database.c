@@ -10,7 +10,10 @@
 #include "../include/database.h"
 #include "../include/dividend.h"
 
-bool database_CreateDatabase()
+/**
+ * @brief Function to create the database file.
+*/
+static const void database_CreateDatabase()
 {
     FILE *fptr;
 
@@ -19,8 +22,12 @@ bool database_CreateDatabase()
 
     // Close the file
     fclose(fptr);
+}
 
-    return true;
+void database_Init(void)
+{
+    // Create the database
+    database_CreateDatabase();
 }
 
 void database_WriteDatabaseHeader(void)

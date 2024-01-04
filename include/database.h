@@ -15,10 +15,9 @@
 #include "dividend.h"
 
 /**
- * @brief Function to create the database file.
- * @return true if creation succeeded, false otherwise
+ * @brief Initialise the database interface.
 */
-bool database_CreateDatabase();
+void database_Init(void);
 
 /**
  * @brief Function to write a header to the database.
